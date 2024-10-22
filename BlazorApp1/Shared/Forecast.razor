@@ -1,0 +1,20 @@
+﻿<tr>
+    <td>@Date.ToShortDateString()</td>
+    <td>@TemperatureC</td>
+    <td>@TemperatureF</td>
+    <td>@Summary</td>
+</tr>
+
+@code {
+    [Parameter]
+    public DateOnly Date { get; set; }
+    
+    [Parameter]
+    public int TemperatureC { get; set; }
+
+    [Parameter]
+    public int TemperatureF { get; set; }
+
+    [Parameter]
+    public string? Summary { get; set; }
+}
